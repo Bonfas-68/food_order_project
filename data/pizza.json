@@ -1,0 +1,596 @@
+{
+  "pizza": {
+    "status": "success",
+    "data": [
+      {
+        "id": 1100,
+        "name": "Focaccia",
+        "ingredients": [
+          "Bread",
+          "italian olive oil",
+          "rosemary"
+        ],
+        "price": 6,
+        "imageUrl": "focaccia.jpg",
+        "soldOut": false
+      },
+      {
+        "id": 1102,
+        "name": "Pizza Margherita",
+        "ingredients": [
+          "Tomato",
+          "mozarella"
+        ],
+        "price": 10,
+        "imageUrl": "margherita.jpg",
+        "soldOut": false
+      },
+      {
+        "id": 1103,
+        "name": "Pizza Spinaci",
+        "ingredients": [
+          "Tomato",
+          "mozarella",
+          "spinach",
+          "ricotta cheese"
+        ],
+        "price": 12,
+        "imageUrl": "spinaci.jpg",
+        "soldOut": false
+      },
+      {
+        "id": 1104,
+        "name": "Pizza Funghi",
+        "ingredients": [
+          "Tomato",
+          "mozarella",
+          "mushrooms",
+          "onion"
+        ],
+        "price": 12,
+        "imageUrl": "funghi.jpg",
+        "soldOut": false
+      },
+      {
+        "id": 1105,
+        "name": "Pizza Salamino",
+        "ingredients": [
+          "Tomato",
+          "mozarella",
+          " pepperoni"
+        ],
+        "price": 15,
+        "imageUrl": "salamino.jpg",
+        "soldOut": true
+      },
+      {
+        "id": 1106,
+        "name": "Pizza Prosciutto",
+        "ingredients": [
+          "Tomato",
+          "mozarella",
+          "ham",
+          "aragula",
+          "burrata cheese"
+        ],
+        "price": 18,
+        "imageUrl": "prosciutto.jpg",
+        "soldOut": false
+      }
+    ]
+  },
+  "order": [
+    {
+      "id": 1,
+      "customer": "Jonas",
+      "phone": "123456789",
+      "address": "Arroios, Lisbon , Portugal",
+      "priority": true,
+      "estimatedDelivery": "2027-04-25T10:00:00",
+      "cart": [
+        {
+          "pizzaId": 7,
+          "name": "Napoli",
+          "quantity": 3,
+          "unitPrice": 16,
+          "totalPrice": 48
+        },
+        {
+          "pizzaId": 5,
+          "name": "Diavola",
+          "quantity": 2,
+          "unitPrice": 16,
+          "totalPrice": 32
+        },
+        {
+          "pizzaId": 3,
+          "name": "Romana",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "position": "-9.000,38.000",
+      "orderPrice": 95,
+      "priorityPrice": 19
+    },
+    {
+      "id": 2,
+      "customer": "Bonfas",
+      "phone": "01234232",
+      "address": "Uganda, Niabon , Japan",
+      "priority": true,
+      "estimatedDelivery": "2023-07-04T00:00:00",
+      "cart": [
+        {
+          "pizzaId": 1103,
+          "name": "Romana",
+          "quantity": 3,
+          "unitPrice": 16,
+          "totalPrice": 48
+        },
+        {
+          "pizzaId": 1105,
+          "name": "Diavola",
+          "quantity": 2,
+          "unitPrice": 16,
+          "totalPrice": 32
+        },
+        {
+          "pizzaId": 1100,
+          "name": "Napoli ",
+          "quantity": 2,
+          "unitPrice": 15,
+          "totalPrice": 30
+        }
+      ],
+      "position": "-6.000,33.000",
+      "orderPrice": 110,
+      "priorityPrice": 19
+    },
+    {
+      "customer": "bonfas",
+      "phone": "0797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 12,
+          "name": "Mediterranean",
+          "quantity": 2,
+          "unitPrice": 16,
+          "totalPrice": 32
+        },
+        {
+          "pizzaId": 6,
+          "name": "Vegetale",
+          "quantity": 1,
+          "unitPrice": 13,
+          "totalPrice": 13
+        },
+        {
+          "pizzaId": 11,
+          "name": "Spinach and Mushroom",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "estimatedDelivery": "2023-08-18T13:43:51.912Z",
+      "orderPrice": 110,
+      "priorityPrice": 19,
+      "id": "2023-08-18T13:43:51.912Z"
+    },
+    {
+      "customer": "bonfas",
+      "phone": "0797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "cart": [
+        {
+          "pizzaId": 12,
+          "name": "Mediterranean",
+          "quantity": 2,
+          "unitPrice": 16,
+          "totalPrice": 32
+        },
+        {
+          "pizzaId": 6,
+          "name": "Vegetale",
+          "quantity": 1,
+          "unitPrice": 13,
+          "totalPrice": 13
+        },
+        {
+          "pizzaId": 11,
+          "name": "Spinach and Mushroom",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "priority": false,
+      "estimatedDelivery": "2023-08-18T13:46:39.282Z",
+      "orderPrice": 110,
+      "priorityPrice": 19,
+      "id": 1692366399282
+    },
+    {
+      "customer": "bonfas",
+      "phone": "+254797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 12,
+          "name": "Mediterranean",
+          "quantity": 2,
+          "unitPrice": 16,
+          "totalPrice": 32
+        },
+        {
+          "pizzaId": 6,
+          "name": "Vegetale",
+          "quantity": 1,
+          "unitPrice": 13,
+          "totalPrice": 13
+        },
+        {
+          "pizzaId": 11,
+          "name": "Spinach and Mushroom",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "estimatedDelivery": "2023-08-18T14:10:18.125Z",
+      "orderPrice": 60,
+      "priorityPrice": 19,
+      "id": 1692367818125
+    },
+    {
+      "customer": "hjdjsjdsd",
+      "phone": "sdsjdhsjdh",
+      "address": "sdhsjhdsjdh",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 12,
+          "name": "Mediterranean",
+          "quantity": 2,
+          "unitPrice": 16,
+          "totalPrice": 32
+        },
+        {
+          "pizzaId": 6,
+          "name": "Vegetale",
+          "quantity": 1,
+          "unitPrice": 13,
+          "totalPrice": 13
+        },
+        {
+          "pizzaId": 11,
+          "name": "Spinach and Mushroom",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "estimatedDelivery": "2023-08-18T14:17:30.184Z",
+      "orderPrice": 60,
+      "priorityPrice": 19,
+      "id": 1692368250184
+    },
+    {
+      "customer": "bonfas",
+      "phone": "+254797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "cart": [
+        {
+          "pizzaId": 12,
+          "name": "Mediterranean",
+          "quantity": 2,
+          "unitPrice": 16,
+          "totalPrice": 32
+        },
+        {
+          "pizzaId": 6,
+          "name": "Vegetale",
+          "quantity": 1,
+          "unitPrice": 13,
+          "totalPrice": 13
+        },
+        {
+          "pizzaId": 11,
+          "name": "Spinach and Mushroom",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "priority": false,
+      "estimatedDelivery": "2023-08-18T14:18:13.401Z",
+      "orderPrice": 60,
+      "priorityPrice": 19,
+      "id": 1692368293401
+    },
+    {
+      "customer": "bonfas",
+      "phone": "+254797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "cart": [
+        {
+          "pizzaId": 12,
+          "name": "Mediterranean",
+          "quantity": 2,
+          "unitPrice": 16,
+          "totalPrice": 32
+        },
+        {
+          "pizzaId": 6,
+          "name": "Vegetale",
+          "quantity": 1,
+          "unitPrice": 13,
+          "totalPrice": 13
+        },
+        {
+          "pizzaId": 11,
+          "name": "Spinach and Mushroom",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "priority": false,
+      "estimatedDelivery": "2023-08-18T14:32:13.267Z",
+      "orderPrice": 60,
+      "priorityPrice": 19,
+      "id": 1692369133267
+    },
+    {
+      "customer": "bella",
+      "phone": "+254797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "cart": [
+        {
+          "pizzaId": 12,
+          "name": "Mediterranean",
+          "quantity": 2,
+          "unitPrice": 16,
+          "totalPrice": 32
+        },
+        {
+          "pizzaId": 6,
+          "name": "Vegetale",
+          "quantity": 1,
+          "unitPrice": 13,
+          "totalPrice": 13
+        },
+        {
+          "pizzaId": 11,
+          "name": "Spinach and Mushroom",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "priority": false,
+      "estimatedDelivery": "2023-08-18T14:34:29.251Z",
+      "orderPrice": 60,
+      "priorityPrice": 19,
+      "id": 1692369269251
+    },
+    {
+      "customer": "Mellsa Muldeba",
+      "phone": "12345679",
+      "address": "wertyuo",
+      "priority": "on",
+      "cart": [
+        {
+          "pizzaId": 1100,
+          "name": "Focaccia",
+          "quantity": 2,
+          "price": 6,
+          "totalPrice": 12
+        },
+        {
+          "pizzaId": 1102,
+          "name": "Pizza Margherita",
+          "quantity": 3,
+          "price": 10,
+          "totalPrice": 30
+        }
+      ],
+      "id": 1692369269252
+    },
+    {
+      "customer": "Mellsa Muldeba",
+      "phone": "+254797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 1103,
+          "name": "Pizza Spinaci",
+          "quantity": 1,
+          "price": 12,
+          "totalPrice": 12
+        }
+      ],
+      "estimatedDelivery": "2023-08-22T09:00:51.373Z",
+      "id": 1692369269253
+    },
+    {
+      "customer": "Mellsa Muldeba",
+      "phone": "0797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 1103,
+          "name": "Pizza Spinaci",
+          "quantity": 6,
+          "price": 12,
+          "totalPrice": 72
+        }
+      ],
+      "estimatedDelivery": "2023-08-22T09:02:10.882Z",
+      "id": 1692369269254
+    },
+    {
+      "customer": "Mellsa Muldeba",
+      "phone": "0788223454",
+      "address": "nairobi",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 1103,
+          "name": "Pizza Spinaci",
+          "quantity": 6,
+          "price": 12,
+          "totalPrice": 72
+        },
+        {
+          "pizzaId": 1100,
+          "name": "Focaccia",
+          "quantity": 3,
+          "price": 6,
+          "totalPrice": 18
+        }
+      ],
+      "estimatedDelivery": "2023-04-25T07:00:00.000Z",
+      "id": 1692369269255
+    },
+    {
+      "customer": "Bernard Achola",
+      "phone": "+254797914242",
+      "address": "10300 MATUNDA-Kiang'ombe Road",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 1102,
+          "name": "Pizza Margherita",
+          "quantity": 6,
+          "price": 10,
+          "totalPrice": 60
+        }
+      ],
+      "orderPrice": 200,
+      "estimatedDelivery": "2023-04-25T07:00:00.000Z",
+      "priorityPrice": 19,
+      "id": 1692696610552
+    },
+    {
+      "customer": "Bernard Achola",
+      "phone": "0797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 1102,
+          "name": "Pizza Margherita",
+          "quantity": 6,
+          "price": 10,
+          "totalPrice": 60
+        },
+        {
+          "pizzaId": 1103,
+          "name": "Pizza Spinaci",
+          "quantity": 3,
+          "price": 12,
+          "totalPrice": 36
+        }
+      ],
+      "orderPrice": 200,
+      "estimatedDelivery": "2023-04-25T07:00:00.000Z",
+      "priorityPrice": 19,
+      "id": 1692696741856
+    },
+    {
+      "customer": "Mellsa Muldeba",
+      "phone": "0797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 1100,
+          "name": "Focaccia",
+          "quantity": 4,
+          "price": 6,
+          "totalPrice": 24
+        },
+        {
+          "pizzaId": 1102,
+          "name": "Pizza Margherita",
+          "quantity": 3,
+          "price": 10,
+          "totalPrice": 30
+        }
+      ],
+      "orderPrice": 54,
+      "estimatedDelivery": "2023-04-25T07:00:00.000Z",
+      "priorityPrice": 19,
+      "id": 1692701280895
+    },
+    {
+      "customer": "Mellsa Muldeba",
+      "phone": "+254797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 1100,
+          "name": "Focaccia",
+          "quantity": 3,
+          "price": 6,
+          "totalPrice": 18
+        },
+        {
+          "pizzaId": 1102,
+          "name": "Pizza Margherita",
+          "quantity": 3,
+          "price": 10,
+          "totalPrice": 30
+        }
+      ],
+      "orderPrice": 48,
+      "estimatedDelivery": "2023-07-25T07:00:00.000Z",
+      "priorityPrice": 19,
+      "id": 1692701330438
+    },
+    {
+      "customer": "bonfas oluoch",
+      "phone": "+254797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 1100,
+          "name": "Focaccia",
+          "quantity": 3,
+          "price": 6,
+          "totalPrice": 18
+        }
+      ],
+      "orderPrice": 18,
+      "estimatedDelivery": "2023-07-25T07:00:00.000Z",
+      "priorityPrice": 19,
+      "id": "ORD1692705725117"
+    },
+    {
+      "customer": "Bonfas Oluoch",
+      "phone": "+254797914242",
+      "address": "10300 Kerugoya-Kiang'ombe Road",
+      "cart": [
+        {
+          "pizzaId": 1102,
+          "name": "Pizza Margherita",
+          "quantity": 3,
+          "totalPrice": null
+        }
+      ],
+      "position": "",
+      "priority": false,
+      "id": 1692701330439
+    }
+  ]
+}

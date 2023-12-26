@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  h3{
+    @apply mb-7 text-4xl font-bold text-darkGrayishBlue md:text-5xl
+  }
+  h5{
+    @apply mb-2 text-2xl font-bold text-darkGrayishBlue
+  }
+}
+.section-container{
+  @apply max-w-6xl mx-auto text-center
+} 
+.section-content{
+  @apply max-w-3xl mx-auto  text-center text-xl leading-9 text-grayishBlue
+}
+.button-container{
+  @apply flex w-full flex-col justify-center space-y-6 gap-y-6 text-xl text-white md:flex-row md:space-x-4 md:space-y-0
+}
+@layer components {
+  .input {
+    @apply rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 placeholder:text-stone-400 focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3;
+  }
+
+  /* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+  .loader {
+    width: 45px;
+    aspect-ratio: 0.75;
+    --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
+    background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+    background-size: 20% 50%;
+    animation: loading 1s infinite linear;
+  }
+
+  @keyframes loading {
+    20% {
+      background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+    60% {
+      background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+    80% {
+      background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+  }
+}
+body{
+  background-image: url('/public/images/bg-header-desktop.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media(max-width:576px){
+  body{
+    background-image: url('/public/images/bg-header-mobile.png');
+  }
+}
+.ficon:hover{
+  filter: invert(53%) sepia(60) saturate(434%) hue-rotate(121deg) brightness(101%) contrast(94%);
+}
